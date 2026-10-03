@@ -1,9 +1,9 @@
 {
-  "destaque": false,
+  "destaque": true,
   "publicado": true,
   "dataCadastro": "2026-10-03",
   "minhaCasaMinhaVida": false,
-  "arquivado": false,
+  "arquivado": true,
   "localizacao": {
     "cidade": "brasilia"
   },
