@@ -1,1 +1,15 @@
-{"whatsapp":"","telefone":"","endereco":"","horario":"","instagram":"","email":"","creci":"","historia":"","siteUrl":"","analytics":{"gtmId":"","ga4Id":""}}
+{
+  "horario": "",
+  "analytics": {
+    "gtmId": "",
+    "ga4Id": ""
+  },
+  "siteUrl": "",
+  "endereco": "",
+  "telefone": "",
+  "whatsapp": "61981545921",
+  "instagram": "",
+  "creci": "",
+  "email": "nexamkt.df@gmail.com",
+  "historia": ""
+}
