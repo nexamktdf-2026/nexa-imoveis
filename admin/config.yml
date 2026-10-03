@@ -1,0 +1,88 @@
+# NEXA IMÓVEIS CMS (Decap CMS). Grava arquivos no Git; a Netlify refaz o site a cada alteração.
+backend:
+  name: git-gateway   # requer Netlify Identity + Git Gateway (ver README)
+  branch: main
+locale: pt
+site_url: /
+media_folder: static/uploads
+public_folder: /uploads
+collections:
+  - name: imoveis
+    label: Imóveis
+    label_singular: Imóvel
+    folder: content/imoveis
+    create: true
+    extension: json
+    format: json
+    slug: "{{codigo}}"
+    identifier_field: codigo
+    summary: "{{codigo}} · {{titulo}} · {{status}}"
+    sortable_fields: [codigo, titulo, dataCadastro]
+    fields:
+      - {name: publicado, label: "Publicado no site (desligado = rascunho)", widget: boolean, default: false}
+      - {name: arquivado, label: "Arquivado (some do site, dados preservados)", widget: boolean, default: false}
+      - {name: destaque, label: "Imóvel em destaque", widget: boolean, default: false}
+      - {name: codigo, label: "Código (ex.: NI-001)", widget: string, hint: "Único para cada imóvel"}
+      - {name: titulo, label: Título, widget: string}
+      - {name: slug, label: "Endereço na web (opcional)", widget: string, required: false, hint: "Se vazio, é gerado do código e título"}
+      - {name: tipo, label: Tipo, widget: select, options: [Casa, Apartamento, Terreno, Lote, Sobrado, Comercial, Empreendimento]}
+      - {name: finalidade, label: Finalidade, widget: select, options: [{label: Venda, value: venda}, {label: Aluguel, value: aluguel}], required: false}
+      - {name: status, label: Status, widget: select, required: false, options: [{label: Disponível, value: disponivel}, {label: Reservado, value: reservado}, {label: Vendido, value: vendido}, {label: Alugado, value: alugado}, {label: Indisponível, value: indisponivel}]}
+      - name: localizacao
+        label: Localização
+        widget: object
+        fields:
+          - {name: cidade, label: Cidade, widget: string}
+          - {name: bairro, label: Bairro, widget: string, required: false}
+          - {name: regiao, label: Região, widget: string, required: false}
+          - {name: endereco, label: Endereço, widget: string, required: false}
+          - {name: referencia, label: Ponto de referência, widget: string, required: false}
+      - {name: preco, label: "Preço (só números)", widget: number, value_type: float, required: false}
+      - {name: entrada, label: Entrada, widget: string, required: false}
+      - {name: condicao, label: Condição de pagamento, widget: string, required: false}
+      - {name: obsComercial, label: Observação comercial, widget: string, required: false}
+      - {name: area, label: "Área (m²)", widget: number, required: false}
+      - {name: quartos, label: Quartos, widget: number, required: false}
+      - {name: suites, label: Suítes, widget: number, required: false}
+      - {name: banheiros, label: Banheiros, widget: number, required: false}
+      - {name: vagas, label: Vagas, widget: number, required: false}
+      - {name: caracteristicas, label: Características, widget: list, required: false, field: {name: item, label: Característica, widget: string}}
+      - {name: diferenciais, label: Diferenciais, widget: list, required: false, field: {name: item, label: Diferencial, widget: string}}
+      - {name: descricaoCurta, label: Descrição curta, widget: text, required: false}
+      - {name: descricao, label: Descrição completa, widget: text, required: false}
+      - {name: financiamento, label: "Financiamento (texto)", widget: text, required: false}
+      - {name: minhaCasaMinhaVida, label: "Relacionado ao Minha Casa Minha Vida", widget: boolean, default: false, required: false}
+      - {name: imagemPrincipal, label: "Imagem principal", widget: image, required: false}
+      - {name: galeria, label: "Galeria (arraste para ordenar)", widget: list, required: false, field: {name: foto, label: Foto, widget: image}}
+      - {name: dataCadastro, label: "Data de cadastro", widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, required: false}
+      - name: seo
+        label: SEO
+        widget: object
+        required: false
+        fields:
+          - {name: title, label: "Título para o Google", widget: string, required: false}
+          - {name: description, label: "Descrição para o Google", widget: text, required: false}
+  - name: config
+    label: Configurações
+    files:
+      - name: config
+        label: "Dados da NEXA Imóveis"
+        file: content/config.json
+        format: json
+        fields:
+          - {name: whatsapp, label: "WhatsApp (só números, com 55 + DDD)", widget: string, required: false}
+          - {name: telefone, label: Telefone, widget: string, required: false}
+          - {name: email, label: E-mail, widget: string, required: false}
+          - {name: endereco, label: Endereço, widget: string, required: false}
+          - {name: horario, label: Horário de atendimento, widget: string, required: false}
+          - {name: instagram, label: Instagram, widget: string, required: false}
+          - {name: creci, label: CRECI, widget: string, required: false}
+          - {name: historia, label: "História da empresa", widget: text, required: false}
+          - {name: siteUrl, label: "Endereço do site (https://...)", widget: string, required: false}
+          - name: analytics
+            label: Analytics
+            widget: object
+            required: false
+            fields:
+              - {name: gtmId, label: "Google Tag Manager (GTM-...)", widget: string, required: false}
+              - {name: ga4Id, label: "Google Analytics 4 (G-...)", widget: string, required: false}

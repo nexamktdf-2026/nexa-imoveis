@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NEXA Imóveis | Imobiliária em Águas Lindas de Goiás, DF e Entorno</title>
+<meta name="description" content="NEXA Imóveis: mais de 10 anos de experiência com imóveis no DF e Entorno, forte atuação em Águas Lindas de Goiás e orientação para o Minha Casa Minha Vida em Goiás.">
+<meta property="og:title" content="NEXA Imóveis | Transformando o sonho em realidade">
+<meta property="og:description" content="Imóveis no DF e Entorno, com forte atuação em Águas Lindas de Goiás.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect width='34' height='34' rx='8' fill='%230e3b36'/%3E%3Cpath d='M8 27V8l13 19V15' fill='none' stroke='%23c8e64c' stroke-width='3.5' stroke-linejoin='round' stroke-linecap='round'/%3E%3Crect x='21' y='6' width='7' height='8' rx='3.5' fill='%23c8e64c'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RealEstateAgent","name":"NEXA Imóveis","slogan":"Transformando o sonho em realidade.","areaServed":["Águas Lindas de Goiás","Distrito Federal e Entorno"]}</script>
+<style>
+:root{--verde:#0e3b36;--verde2:#165049;--lima:#c8e64c;--bg:#f5f6f2;--card:#fff;--txt:#14221f;--mut:#58655f;--line:#d6dbd3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1715;--card:#17211e;--txt:#e9efec;--mut:#9fb0a9;--line:#2b3a36}}
+:root[data-theme="dark"]{--bg:#0f1715;--card:#17211e;--txt:#e9efec;--mut:#9fb0a9;--line:#2b3a36}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--txt);font:400 1.0625rem/1.65 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--lima);outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 1.25rem}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--verde);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:1rem}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;font:800 1.25rem "Bricolage Grotesque",sans-serif}
+.logo small{display:block;font:600 .62rem Figtree,sans-serif;opacity:.7;letter-spacing:.14em;margin-top:-2px}
+@media (max-width:380px){.logo span{display:none}}
+nav{display:flex;gap:1.5rem;align-items:center}
+nav a{text-decoration:none;font-size:.95rem;opacity:.85}
+nav a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.7rem 1.4rem;background:var(--lima);color:#10231f;font:700 1rem "Bricolage Grotesque",sans-serif;text-decoration:none;border:0;border-radius:999px;cursor:pointer;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.out{background:transparent;color:inherit;border:2px solid currentColor}
+.btn.dk{background:var(--verde);color:#fff}
+@media (max-width:860px){nav a:not(.btn){display:none}}
+.hero{background:var(--verde);color:#fff;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:2.5rem;align-items:end;padding-top:4.5rem;min-height:640px}
+.hero h1{font-size:clamp(2.7rem,6.8vw,5.4rem);font-weight:800;letter-spacing:-.03em}
+.hero .sub{color:#b8cbc5;max-width:40ch;margin:1.4rem 0 2rem}
+.hero .sub b{color:#fff;font-weight:600}
+.acts{display:flex;gap:.8rem;flex-wrap:wrap;padding-bottom:4.5rem}
+.arch{background:var(--lima);color:#10231f;border-radius:999px 999px 0 0;padding:7rem 2.2rem 2.5rem;width:100%;max-width:360px;margin-left:auto;animation:open 1s cubic-bezier(.2,.8,.2,1) both;transform-origin:bottom;position:relative}
+.arch::before{content:"";position:absolute;top:2.2rem;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--verde)}
+.arch p{margin:0;font:800 clamp(1.6rem,3vw,2.1rem)/1.08 "Bricolage Grotesque",sans-serif}
+.arch span{display:block;margin-top:1.1rem;font-size:.9rem;opacity:.75}
+@keyframes open{from{transform:scaleY(.3);opacity:0}to{transform:none;opacity:1}}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;min-height:0;padding-top:2.5rem}.acts{padding-bottom:1.5rem}.arch{margin:0 auto;max-width:100%;padding-top:5rem}}
+section{padding:5.5rem 0}
+h2{font-size:clamp(1.9rem,4.2vw,3.1rem);font-weight:800;margin-bottom:1rem;letter-spacing:-.02em}
+.lead{max-width:58ch;color:var(--mut);margin:0}
+@media (max-width:860px){section{padding:3.5rem 0}}
+/* catálogo */
+input[type=search]{min-width:220px;border-radius:999px}
+.filters{display:flex;gap:.75rem;flex-wrap:wrap;margin:1.75rem 0 0}
+select{font:inherit;min-height:48px;padding:.6rem 1rem;border:1px solid var(--line);background:var(--card);color:var(--txt);border-radius:999px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2.25rem 1.5rem;margin-top:2.25rem}
+.im{display:flex;flex-direction:column;gap:.9rem;opacity:0;transform:translateY(12px);transition:opacity .5s,transform .5s}
+.im.in{opacity:1;transform:none}
+.im.dest{grid-column:span 2}
+@media (max-width:700px){.im.dest{grid-column:auto}}
+.pic{position:relative;display:block;width:100%;padding:0;border:0;background:none;cursor:pointer;border-radius:20px;overflow:hidden;aspect-ratio:4/3}
+.im.dest .pic{aspect-ratio:16/10}
+.pic img,.ph{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.pic:hover img{transform:scale(1.03)}
+.ph{background:#dfe5dc;color:#4b5a54;display:grid;place-items:center;text-align:center;padding:1rem;font:600 .9rem Figtree;aspect-ratio:4/3}
+.tag{position:absolute;left:.8rem;top:.8rem;background:var(--lima);color:#10231f;font:700 .78rem Figtree;padding:.25rem .7rem;border-radius:999px}
+.tag.st{left:auto;right:.8rem;background:#fff}
+.im h3{font-size:1.35rem}
+.im .meta{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;color:var(--mut);font-size:.92rem}
+.price{font:800 1.35rem "Bricolage Grotesque"}
+.facts{display:flex;gap:.3rem 1rem;flex-wrap:wrap;font-size:.92rem;color:var(--mut)}
+.im .row{display:flex;gap:.6rem;flex-wrap:wrap}
+.im .btn{min-height:44px;font-size:.92rem;padding:.5rem 1.2rem}
+.more{text-align:center;margin-top:2.5rem}
+.empty{margin-top:2.25rem;background:var(--verde);color:#fff;border-radius:999px 999px 24px 24px;padding:4rem 1.5rem 3rem;text-align:center}
+.empty h3{font-size:clamp(1.5rem,3.5vw,2.2rem);margin-bottom:.7rem}
+.empty p{color:#b8cbc5;margin:0 auto 1.6rem;max-width:36ch}
+dialog{border:0;border-radius:22px;padding:0;max-width:820px;width:calc(100% - 1.25rem);max-height:calc(100dvh - 1.25rem);overflow:auto;background:var(--card);color:var(--txt)}
+dialog::backdrop{background:rgba(8,20,17,.72)}
+.dh{position:relative;background:#000;touch-action:pan-y}
+.dh img,.dh .ph{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;cursor:zoom-in}
+dialog.zoom .dh img{object-fit:contain;aspect-ratio:auto;max-height:calc(100dvh - 8rem);cursor:zoom-out}
+.cap{position:absolute;left:0;right:0;bottom:0;padding:2rem 1rem .8rem;background:linear-gradient(transparent,rgba(0,0,0,.65));color:#fff;font:600 .85rem Figtree;display:flex;justify-content:space-between;pointer-events:none}
+.arr{position:absolute;top:50%;width:48px;height:48px;border-radius:50%;border:0;background:rgba(255,255,255,.92);font-size:1.4rem;cursor:pointer;transform:translateY(-50%);color:#111}
+.arr.l{left:.7rem}.arr.r{right:.7rem}
+.x{position:absolute;top:.7rem;right:.7rem;z-index:2;width:44px;height:44px;border-radius:50%;border:0;background:#fff;color:#111;cursor:pointer;font-size:1.1rem}
+.thumbs{display:flex;gap:.4rem;overflow-x:auto;padding:.7rem 1rem}
+.thumbs button{flex:0 0 76px;height:56px;border:2px solid transparent;padding:0;background:none;cursor:pointer;border-radius:10px;overflow:hidden;opacity:.7}
+.thumbs button[aria-current=true]{border-color:var(--verde);opacity:1}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.db{padding:1rem 1.5rem 1.7rem;display:grid;gap:.8rem}
+.db h2{font-size:1.9rem;margin:0}
+.db .cod{font-size:.85rem;color:var(--mut)}
+.db .chips{display:flex;gap:.5rem;flex-wrap:wrap}
+.chips span{border:1px solid var(--line);border-radius:999px;padding:.25rem .8rem;font-size:.88rem}
+.db .btn{justify-self:start}
+/* seções */
+.alu{background:var(--lima);color:#10231f;text-align:center}
+.alu h2{font-size:clamp(2.2rem,6.5vw,4.8rem);margin:0 auto 1.6rem;max-width:14ch;letter-spacing:-.03em}
+.alu .acts{justify-content:center;padding:0}
+.jour{display:grid;grid-template-columns:repeat(3,1fr);margin-top:2.5rem}
+.jour div{padding:1.4rem 1.4rem 1.4rem 0;border-top:4px solid var(--verde);font:700 clamp(1.1rem,2vw,1.4rem)/1.2 "Bricolage Grotesque"}
+.jour div:last-child{border-color:var(--lima)}
+@media (max-width:700px){.jour{grid-template-columns:1fr}}
+.reg{background:var(--verde);color:#fff}
+.reg .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.reg .lead{color:#b8cbc5}
+.lock{font:800 clamp(2rem,5vw,3.6rem)/1 "Bricolage Grotesque";letter-spacing:-.02em}
+.lock em{display:block;font-style:normal;color:var(--lima)}
+.lock small{display:block;margin-top:1rem;font:600 1rem Figtree;color:#b8cbc5;letter-spacing:0}
+@media (max-width:860px){.reg .wrap{grid-template-columns:1fr}}
+.prova{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2.5rem}
+.prova div{border-top:3px solid var(--verde);padding-top:.9rem;font:700 1.15rem/1.2 "Bricolage Grotesque"}
+@media (max-width:860px){.prova{grid-template-columns:1fr 1fr}}
+form{display:grid;gap:1rem;max-width:520px;margin-top:1.75rem}
+label{font:600 .9rem Figtree;display:grid;gap:.35rem}
+input,textarea{font:inherit;padding:.85rem;border:1px solid var(--line);background:var(--card);color:var(--txt);min-height:48px;border-radius:12px}
+.cg{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem}
+@media (max-width:860px){.cg{grid-template-columns:1fr}}
+.info{display:grid;gap:.6rem;align-content:start}
+.info small{color:var(--mut)}
+footer{background:var(--verde);color:#b8cbc5;padding:2.5rem 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
+footer .logo{color:#fff;margin-bottom:.6rem}
+.wa{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:15;min-height:46px;padding:.5rem 1.1rem;font-size:.92rem;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:opacity .3s}
+.wa.hide{opacity:0;pointer-events:none}
+@media (min-width:861px){.wa{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.im{opacity:1;transform:none}}
+</style>
+<!--__ANALYTICS__-->
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="n" viewBox="0 0 34 34"><path d="M5 29V5l16 24V13" fill="none" stroke="#c8e64c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><rect x="21" y="3" width="9" height="10" rx="4.5" fill="#c8e64c"/></symbol></svg>
+
+<header><div class="wrap">
+<a class="logo" href="#inicio" aria-label="NEXA Imóveis - início"><svg width="34" height="34"><use href="#n"/></svg><span>NEXA<small>IMÓVEIS</small></span></a>
+<nav aria-label="Principal"><a href="#imoveis">Imóveis</a><a href="#mcmv">Minha Casa Minha Vida</a><a href="#aguas-lindas">Águas Lindas</a><a href="#nexa">A NEXA</a><a href="#contato">Contato</a>
+<a class="btn" data-wa="Olá! Vim pelo site da NEXA Imóveis e gostaria de falar com a equipe." href="#contato">Falar com a NEXA</a></nav>
+</div></header>
+
+<main id="inicio">
+<div class="hero"><div class="wrap">
+<div>
+<h1>Transformando o sonho em realidade.</h1>
+<p class="sub"><b>Imobiliária no DF e Entorno</b>, com forte atuação em Águas Lindas de Goiás. Mais de 10 anos ajudando você a encontrar o imóvel certo.</p>
+<div class="acts"><a class="btn" href="#imoveis">Ver imóveis</a><a class="btn out" data-wa="Olá! Vim pelo site da NEXA Imóveis e gostaria de falar com a equipe." href="#contato">Falar com a NEXA</a></div>
+</div>
+<div class="arch"><p>Saia hoje mesmo do aluguel. Vem morar no que é seu.</p><span>Mais de 10 anos de experiência</span></div>
+</div></div>
+
+<section id="destaques" hidden><div class="wrap"><h2>Imóveis em destaque</h2><div class="grid" id="dest-lista"></div></div></section>
+
+<section id="imoveis"><div class="wrap">
+<h2>Imóveis disponíveis</h2>
+<p class="lead">Cada imóvel tem suas próprias fotos e informações. Escolha um e fale com a NEXA sobre ele.</p>
+<div class="filters" id="filtros" hidden></div>
+<div class="grid" id="lista" aria-live="polite"></div>
+<div class="more" id="mais" hidden><button class="btn dk" id="maisb">Ver mais imóveis</button></div>
+</div></section>
+
+<section class="alu" aria-labelledby="alu-t"><div class="wrap">
+<h2 id="alu-t">Saia hoje mesmo do aluguel. Vem morar no que é seu.</h2>
+<div class="acts"><a class="btn dk" href="#imoveis">Quero encontrar meu imóvel</a><a class="btn out" data-wa="Olá! Vim pelo site da NEXA Imóveis e quero sair do aluguel." href="#contato">Falar com a NEXA</a></div>
+</div></section>
+
+<section id="mcmv"><div class="wrap">
+<h2>Minha Casa Minha Vida em Goiás</h2>
+<p class="lead">A NEXA Imóveis tem experiência no processo ligado ao programa em Goiás. A aprovação depende das regras do programa e da análise de cada pessoa.</p>
+<div class="jour"><div>Quer sair do aluguel?</div><div>A NEXA Imóveis pode te orientar no processo.</div><div>Fale com a NEXA.</div></div>
+<p style="margin-top:1.8rem"><a class="btn dk" data-wa="Olá! Vim pelo site da NEXA Imóveis e quero saber se posso comprar meu imóvel pelo Minha Casa Minha Vida." href="#contato">Quero saber se posso comprar meu imóvel</a></p>
+</div></section>
+
+<section id="aguas-lindas" class="reg"><div class="wrap">
+<div class="lock">Águas Lindas de Goiás<em>+ DF e Entorno</em><small>Conhecimento da região. Experiência para encontrar o seu imóvel.</small></div>
+<p class="lead">Águas Lindas de Goiás é uma região estratégica para a NEXA Imóveis, que também atende todo o Distrito Federal e Entorno. Quem conhece a região ajuda você a escolher melhor.</p>
+</div></section>
+
+<section id="nexa"><div class="wrap">
+<h2>Sobre a NEXA Imóveis</h2>
+<p class="lead">Mais de 10 anos no mercado imobiliário, atuando no DF e Entorno, com forte presença em Águas Lindas de Goiás e experiência com o Minha Casa Minha Vida em Goiás.</p>
+<div class="prova"><div>Mais de 10 anos de experiência</div><div>Atuação no DF e Entorno</div><div>Forte atuação em Águas Lindas de Goiás</div><div>Experiência com Minha Casa Minha Vida em Goiás</div></div>
+<div id="historia" style="margin-top:2rem;max-width:60ch" hidden></div>
+</div></section>
+
+<section id="contato" style="border-top:1px solid var(--line)"><div class="wrap cg">
+<div><h2>Fale com a NEXA</h2><p class="lead">Conte o que você procura e a equipe responde.</p>
+<form id="f"><label>Nome<input name="n" required autocomplete="name"></label><label>Telefone<input name="t" type="tel" required autocomplete="tel"></label><label>Mensagem<textarea name="m" rows="3"></textarea></label><button class="btn" type="submit">Falar com a NEXA</button></form></div>
+<div class="info" id="info"></div>
+</div></section>
+</main>
+
+<a class="btn wa" id="waf" data-wa="Olá! Vim pelo site da NEXA Imóveis e gostaria de falar com a equipe." href="#contato">WhatsApp</a>
+<dialog id="dlg" aria-label="Detalhes do imóvel"></dialog>
+
+<footer><div class="wrap">
+<div><a class="logo" href="#inicio"><svg width="30" height="30"><use href="#n"/></svg><span>NEXA<small>IMÓVEIS</small></span></a><div>Transformando o sonho em realidade.</div><div id="frod"></div></div>
+<div>© 2026 NEXA Imóveis. Todos os direitos reservados.<br>Site desenvolvido por NEXA MKT</div>
+</div></footer>
+
+<script>
+/*__DATA__*/
+
+var $=function(s){return document.querySelector(s)},PAGE=9,shown=PAGE,F={};
+function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
+function wa(t){return "https://wa.me/"+WHATS+"?text="+encodeURIComponent(t)}
+function bind(r){if(!WHATS)return;r.querySelectorAll("[data-wa]").forEach(function(a){a.href=wa(a.dataset.wa);a.target="_blank";a.rel="noopener"})}
+function nome(i){return i.titulo||(i.codigo?"imóvel "+i.codigo:"imóvel")}
+function pid(i,k){return String(i.id||i.codigo||k)}
+function msg(i){return "Olá! Vim pelo site da NEXA Imóveis e tenho interesse no imóvel "+(i.codigo||i.titulo||"")+(i.codigo&&i.titulo?" - "+i.titulo:"")+". Gostaria de receber mais informações."}
+function facts(i){var f=[];if(i.metragem)f.push(i.metragem);if(i.quartos)f.push(i.quartos+" quarto(s)");if(i.banheiros)f.push(i.banheiros+" banheiro(s)");if(i.vagas)f.push(i.vagas+" vaga(s)");return f.map(function(x){return "<span>"+esc(String(x))+"</span>"}).join("")}
+function pic(i,n,alt){var s=i.fotos&&i.fotos[n];return s?'<img src="'+esc(s)+'" alt="'+esc(alt)+'" loading="lazy" decoding="async">':'<div class="ph">Foto em breve</div>'}
+
+/* Componentes */
+function EmptyState(){return '<div class="empty"><h3>Novos imóveis estão chegando</h3><p>Estamos preparando nossa seleção de oportunidades para você.</p><a class="btn" data-wa="Olá! Vim pelo site da NEXA Imóveis e gostaria de saber sobre os imóveis disponíveis." href="#contato">Falar com a NEXA</a></div>'}
+function PropertyCard(i,k,big){return '<article class="im'+(big?' dest':'')+'"><button class="pic" data-k="'+k+'" aria-label="Ver fotos de '+esc(nome(i))+'">'+pic(i,0,"Foto principal de "+nome(i))+(i.destaque?'<span class="tag">Imóvel em destaque</span>':'')+(i.status?'<span class="tag st">'+esc(i.status)+'</span>':'')+'</button><div>'+(i.tipo||i.local?'<div class="meta"><span>'+[i.tipo,i.local].filter(Boolean).map(esc).join(" · ")+'</span>'+(i.codigo?'<span>Cód. '+esc(i.codigo)+'</span>':'')+'</div>':'')+(i.titulo?'<h3>'+esc(i.titulo)+'</h3>':'')+(i.preco?'<div class="price">'+esc(i.preco)+'</div>':'')+'<div class="facts">'+facts(i)+'</div></div><div class="row"><button class="btn dk" data-k="'+k+'">Ver fotos e detalhes</button><a class="btn out" data-wa="'+esc(msg(i))+'" href="#contato">Tenho interesse</a></div></article>'}
+
+/* Catálogo: dados vêm de /content (build). Filtros só aparecem se houver dados compatíveis */
+function buildFilters(){var box=$("#filtros"),h='<input type="search" id="q" placeholder="Buscar por código, título, bairro..." aria-label="Buscar imóveis">';
+[["tipo","Tipo"],["cidade","Cidade"],["bairro","Bairro"],["quartos","Quartos"],["vagas","Vagas"],["status","Status"]].forEach(function(c){var v=[];IMOVEIS.forEach(function(i){if(i[c[0]]&&v.indexOf(i[c[0]])<0)v.push(i[c[0]])});
+if(v.length>1)h+='<select data-f="'+c[0]+'" aria-label="'+c[1]+'"><option value="">'+c[1]+': todos</option>'+v.map(function(x){return '<option>'+esc(String(x))+'</option>'}).join("")+'</select>'});
+if(IMOVEIS.filter(function(i){return i.precoNum}).length>1)h+='<select id="ord" aria-label="Ordenar"><option value="">Mais recentes</option><option value="pa">Menor preço</option><option value="pd">Maior preço</option></select>';
+if(IMOVEIS.length>1){box.hidden=false;box.innerHTML=h;box.oninput=box.onchange=function(e){if(e.target.dataset.f)F[e.target.dataset.f]=e.target.value;shown=PAGE;render()}}}
+function ok(i){var t=($("#q")||{}).value;if(t){var s=[i.codigo,i.titulo,i.tipo,i.cidade,i.bairro,(i.caracteristicas||[]).join(" ")].join(" ").toLowerCase();if(s.indexOf(t.toLowerCase())<0)return false}return Object.keys(F).every(function(c){return !F[c]||String(i[c])===F[c]})}
+function render(){var L=$("#lista"),D=IMOVEIS.map(function(i,k){return[i,k]}),fd=D.filter(function(p){return p[0].destaque}).slice(0,3);
+if(fd.length){$("#destaques").hidden=false;$("#dest-lista").innerHTML=fd.map(function(p,j){return PropertyCard(p[0],p[1],j===0&&fd.length>1)}).join("");bind($("#dest-lista"))}
+if(!IMOVEIS.length){L.innerHTML=EmptyState();bind(L);$("#mais").hidden=true;return}
+var q=D.filter(function(p){return ok(p[0])}),o=($("#ord")||{}).value;
+q.sort(function(a,b){return o==="pa"?(a[0].precoNum||1e12)-(b[0].precoNum||1e12):o==="pd"?(b[0].precoNum||0)-(a[0].precoNum||0):String(b[0].data||"").localeCompare(String(a[0].data||""))});
+L.innerHTML=q.length?q.slice(0,shown).map(function(p){return PropertyCard(p[0],p[1])}).join(""):'<p class="lead">Nenhum imóvel encontrado com esses filtros.</p>';
+$("#mais").hidden=q.length<=shown;bind(L);reveal()}
+function reveal(){var els=document.querySelectorAll(".im:not(.in)");
+if(!("IntersectionObserver" in window)){els.forEach(function(e){e.classList.add("in")});return}
+var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");o.unobserve(e.target)}})},{rootMargin:"0px 0px -40px"});els.forEach(function(e){o.observe(e)})}
+$("#maisb").onclick=function(){shown+=PAGE;render()};
+
+/* Galeria + detalhe (cada imóvel usa somente as próprias fotos) */
+var dlg=$("#dlg"),cur=0,im=null,T0=document.title;
+function Gallery(){var f=im.fotos||[],n=Math.max(f.length,1);
+return '<div class="dh"><button class="x" aria-label="Fechar" id="cx">✕</button><div id="big">'+pic(im,cur,"Foto "+(cur+1)+" de "+nome(im))+'</div><div class="cap"><span>'+esc(im.codigo?"Cód. "+im.codigo:nome(im))+'</span><span>'+(cur+1)+' / '+n+'</span></div>'+(n>1?'<button class="arr l" aria-label="Foto anterior" id="pv">‹</button><button class="arr r" aria-label="Próxima foto" id="nx">›</button>':'')+'</div>'+(n>1?'<div class="thumbs">'+f.map(function(s,k){return '<button data-t="'+k+'" aria-label="Foto '+(k+1)+'"'+(k===cur?' aria-current="true"':'')+'><img src="'+esc(s)+'" alt="" loading="lazy"></button>'}).join("")+'</div>':'')}
+function Details(){var c=im.caracteristicas&&im.caracteristicas.length;
+return '<div class="db">'+(im.codigo?'<span class="cod">Código '+esc(im.codigo)+'</span>':'')+'<h2>'+esc(im.titulo||nome(im))+'</h2>'+(im.local?'<span>'+esc(im.local)+'</span>':'')+(im.preco?'<div class="price">'+esc(im.preco)+'</div>':'')+'<div class="chips">'+[im.tipo].concat([im.metragem,im.quartos&&im.quartos+" quarto(s)",im.banheiros&&im.banheiros+" banheiro(s)",im.vagas&&im.vagas+" vaga(s)"]).filter(Boolean).map(function(x){return '<span>'+esc(String(x))+'</span>'}).join("")+'</div>'+(c?'<div class="chips">'+im.caracteristicas.map(function(x){return '<span>'+esc(x)+'</span>'}).join("")+'</div>':'')+(im.descricao?'<p>'+esc(im.descricao)+'</p>':'')+(im.financiamento?'<p>'+esc(im.financiamento)+'</p>':'')+'<a class="btn" data-wa="'+esc(msg(im))+'" href="#contato">Falar sobre este imóvel</a></div>'}
+function show(){var n=Math.max((im.fotos||[]).length,1);dlg.innerHTML=Gallery()+Details();bind(dlg);
+$("#cx").onclick=function(){dlg.close()};
+function go(d){cur=(cur+n+d)%n;show()}
+var p=$("#pv");if(p){p.onclick=function(){go(-1)};$("#nx").onclick=function(){go(1)}}
+dlg.querySelectorAll("[data-t]").forEach(function(b){b.onclick=function(){cur=+b.dataset.t;show()}});
+var dh=dlg.querySelector(".dh"),x0=null;
+dh.ontouchstart=function(e){x0=e.touches[0].clientX};
+dh.ontouchend=function(e){if(x0===null||n<2)return;var d=e.changedTouches[0].clientX-x0;x0=null;if(Math.abs(d)>40)go(d<0?1:-1)};
+$("#big").onclick=function(){dlg.classList.toggle("zoom")}}
+function open(k){im=IMOVEIS[k];cur=0;dlg.classList.remove("zoom");show();if(!dlg.open)dlg.showModal();document.title=nome(im)+" | NEXA Imóveis";history.replaceState(null,"",im.slug?"/imoveis/"+im.slug+"/":"#imovel-"+encodeURIComponent(pid(im,k)));window.dataLayer&&dataLayer.push({event:"view_imovel",codigo:im.codigo||""})}
+document.addEventListener("click",function(e){var b=e.target.closest("[data-k]");if(b)open(+b.dataset.k)});
+dlg.addEventListener("click",function(e){if(e.target===dlg)dlg.close()});
+dlg.addEventListener("keydown",function(e){var p=$("#pv");if(e.key==="ArrowLeft"&&p)p.click();if(e.key==="ArrowRight"&&p)$("#nx").click()});
+dlg.addEventListener("close",function(){document.title=T0;history.replaceState(null,"","/")});
+function deep(){var id=window.OPEN||(location.hash.match(/^#imovel-(.+)$/)||[])[1];if(!id)return;id=decodeURIComponent(id);IMOVEIS.forEach(function(i,k){if(pid(i,k)===id)open(k)})}
+
+/* Contato, história, rodapé: só mostram dados existentes */
+(function(){var h="",c=CONTATO;
+if(c.telefone)h+='<div><a href="tel:'+esc(c.telefone.replace(/[^\d+]/g,""))+'">'+esc(c.telefone)+'</a></div>';
+if(c.endereco)h+='<div>'+esc(c.endereco)+'</div>';
+if(c.horario)h+='<div>'+esc(c.horario)+'</div>';
+if(c.email)h+='<div><a href="mailto:'+esc(c.email)+'">'+esc(c.email)+'</a></div>';
+if(c.instagram)h+='<div><a href="https://instagram.com/'+esc(c.instagram.replace("@",""))+'" rel="noopener" target="_blank">'+esc(c.instagram)+'</a></div>';
+$("#info").innerHTML='<h2 style="font-size:1.5rem">Atendimento</h2><div>Distrito Federal e Entorno, com foco em Águas Lindas de Goiás.</div>'+h+(h?'':'<small>Mais canais de atendimento em atualização.</small>');
+if(c.creci)$("#frod").textContent="CRECI "+c.creci;
+if(HISTORIA){var d=$("#historia");d.hidden=false;d.innerHTML="<p>"+esc(HISTORIA)+"</p>"}})();
+
+buildFilters();render();bind(document);deep();
+var ct=$("#contato"),wf=$("#waf");
+if("IntersectionObserver" in window)new IntersectionObserver(function(e){wf.classList.toggle("hide",e[0].isIntersecting)}).observe(ct);
+$("#f").addEventListener("submit",function(e){e.preventDefault();var d=new FormData(e.target);
+if(!WHATS){e.target.innerHTML='<p><b>Obrigado, '+esc(d.get("n"))+'!</b> Recebemos seu contato. Nossa equipe fala com você em breve.</p>';return}
+window.open(wa("Olá! Sou "+d.get("n")+" ("+d.get("t")+"). "+(d.get("m")||"Vim pelo site da NEXA Imóveis e gostaria de saber mais.")),"_blank","noopener")});
+</script>
+</body>
+</html>
