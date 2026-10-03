@@ -1,0 +1,16 @@
+{
+  "destaque": false,
+  "publicado": false,
+  "dataCadastro": "2026-10-03",
+  "minhaCasaMinhaVida": false,
+  "arquivado": false,
+  "localizacao": {
+    "cidade": "brasilia"
+  },
+  "tipo": "Casa",
+  "galeria": [
+    "/uploads/p11.jpg"
+  ],
+  "codigo": "casa",
+  "titulo": "casa"
+}
